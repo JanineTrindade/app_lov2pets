@@ -31,10 +31,12 @@ class CartProvider extends ChangeNotifier {
     totalPrice(){ 
       double total1 = 0.0;
        for(Product element in _cart){
-        total1 += element.price *element.quantity;
+        total1 += element.price * element.quantity;
        }
-       return total1;
+       //return total1;
+       return double.parse(total1.toStringAsFixed(2));
     }
+    
   static CartProvider of(
     BuildContext context, {
     bool listen = true,
@@ -42,4 +44,5 @@ class CartProvider extends ChangeNotifier {
     return Provider.of<CartProvider>(
       context, listen: listen);
   }
+  
 }

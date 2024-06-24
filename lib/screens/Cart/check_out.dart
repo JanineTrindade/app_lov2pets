@@ -67,7 +67,7 @@ class CheckOutBox extends StatelessWidget {
                 ),
               ),
               Text(
-                "\R\$${Provider.totalPrice()}",
+                'R\$ ${Provider.totalPrice().toStringAsFixed(2).replaceAll('.', ',')}',
                 style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
@@ -89,7 +89,7 @@ class CheckOutBox extends StatelessWidget {
                 ),
               ),
               Text(
-                "\R\$${Provider.totalPrice()}",
+                'R\$ ${Provider.totalPrice().toStringAsFixed(2).replaceAll('.', ',')}',
                 style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,

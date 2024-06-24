@@ -60,7 +60,7 @@ class ProductCard extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      "  \R\$${product.price}",
+                       'R\$ ${product.price.toStringAsFixed(2).replaceAll('.', ',')}',
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 17,

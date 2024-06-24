@@ -23,10 +23,10 @@ class ItemsDetails extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "\R\$${product.price}",
+               'R\$ ${product.price.toStringAsFixed(2).replaceAll('.', ',')}',
               style: const TextStyle(
                 fontWeight: FontWeight.w800,
-                fontSize: 25,
+                fontSize: 23,
               ),
             ),
             const SizedBox(height: 10, width: 230),
