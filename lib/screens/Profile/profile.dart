@@ -113,7 +113,7 @@ class Profile extends StatelessWidget {
                               ),
                             ),
                             const Text(
-                              "Mâe do pet - Luke ",
+                              "Mãe do pet - Luke ",
                               style: TextStyle(
                                   fontWeight: FontWeight.w800,
                                   fontSize: 16,

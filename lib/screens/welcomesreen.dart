@@ -21,7 +21,7 @@ class welcomescreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                 Text("  Bem-vindo ao seu novo\njeito de cuidar do seu pet!",
+                 Text("      Bem-vindo ao novo\njeito de cuidar do seu pet!",
                  style: TextStyle(
                   fontFamily: AutofillHints.countryCode,
                   color: Colors.white,
